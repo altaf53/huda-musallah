@@ -57,7 +57,7 @@ export default function RootLayout({ children }) {
         style={{ background: "#fff" }}
       >
         <Header />
-        <main style={{ minHeight: "80vh", padding: "2rem 0" }}>{children}</main>
+        <main>{children}</main>
         <Footer />
       </body>
     </html>

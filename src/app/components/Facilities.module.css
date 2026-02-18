@@ -1,0 +1,147 @@
+.facilitiesSection {
+  width: 100%;
+  padding: 1.5rem 1rem;
+  background: transparent;
+}
+
+@media (prefers-color-scheme: dark) {
+  .facilitiesSection {
+    background: transparent;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.75rem;
+  color: var(--foreground);
+}
+
+.subheading {
+  font-size: 1rem;
+  text-align: center;
+  color: var(--foreground);
+  opacity: 0.7;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: var(--background);
+  border-radius: 12px;
+  padding: 1.75rem 1.25rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border);
+}
+
+@media (prefers-color-scheme: dark) {
+  .card {
+    box-shadow: var(--shadow-md);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+  }
+}
+
+.iconContainer {
+  margin-bottom: 1rem;
+}
+
+.icon {
+  font-size: 2.5rem;
+  display: inline-block;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+.itemsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.listItem {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  padding: 0.5rem 0;
+}
+
+@media (min-width: 769px) {
+  .facilitiesSection {
+    padding: 2rem 1rem;
+  }
+
+  .heading {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .subheading {
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+  }
+
+  .cardsGrid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  .card {
+    padding: 2.5rem 1.5rem;
+    border-radius: 16px;
+  }
+
+  .icon {
+    font-size: 3rem;
+  }
+
+  .cardTitle {
+    font-size: 1.4rem;
+  }
+
+  .listItem {
+    font-size: 0.95rem;
+  }
+}
