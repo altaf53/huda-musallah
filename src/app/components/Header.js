@@ -9,7 +9,7 @@ export default function Header() {
             <span className={styles.logoIcon}>🕌</span>
             <div>
               <h1 className={styles.title}>Huda Musallah</h1>
-              <p className={styles.subtitle}>Prayer Times & Information</p>
+              {/* <p className={styles.subtitle}>Prayer Times & Information</p> */}
             </div>
           </div>
         </div>

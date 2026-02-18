@@ -7,7 +7,7 @@ export default function Facilities() {
       icon: "🕌",
       title: "Prayer Facilities",
       items: [
-        "Separate prayer Halls for Brothers and Sisters",
+        "Prayer hall for Brothers only",
         "Five Daily Prayers (Salah)",
         "Taraweeh Prayers (Ramadan)",
       ],
