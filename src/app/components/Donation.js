@@ -16,7 +16,7 @@ export default function Donation() {
           <div className={styles.iconContainer}>
             <span className={styles.icon}>💚</span>
           </div>
-          <h2 className={styles.title}>Support Our Community</h2>
+          <h2 className={styles.title}>Support Your Musallah</h2>
           <p className={styles.description}>
             Help us maintain and improve our facilities to serve our community
             better. Your generous donation makes a difference.
