@@ -16,6 +16,7 @@ export default function Footer() {
             <h3 className={styles.sectionTitle}>📍 Location</h3>
             <p className={styles.text}>411, 301 Prudential Drive</p>
             <p className={styles.text}>M1P 4V3, Scarborough</p>
+            <p className={styles.text}>Near Lawrence Avenue East & Midland Avenue</p>
             <p className={styles.buzzer}>
               Buzzer: <strong>1050</strong>
             </p>
@@ -31,7 +32,7 @@ export default function Footer() {
         <div className={styles.divider}></div>
 
         <div className={styles.copyright}>
-          &copy; {now.getFullYear()} Huda Musallah. All rights reserved.
+          &copy; {now.getFullYear()} Masjid Huda. All rights reserved.
         </div>
       </div>
     </footer>

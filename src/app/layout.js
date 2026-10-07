@@ -14,39 +14,55 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Huda Musallah",
+  title: "Masjid Huda | Prayer Times in Scarborough",
   description:
-    "Prayer timings and information for Huda Musallah, a masjid in Scarborough near Abu Bakr Masjid. Namaz place located on Prudential Drive.",
+    "Prayer times and information for Masjid Huda in Scarborough, near the intersection of Lawrence Avenue East and Midland Avenue.",
   keywords: [
-    "Huda Musallah",
+    "Masjid Huda",
+    "Masjid Huda Scarborough",
     "Scarborough masjid",
+    "Lawrence and Midland masjid",
+    "Lawrence Avenue East mosque",
+    "Midland Avenue mosque",
     "namaz timings",
     "Prudential Drive",
-    "Abu Bakr Masjid",
     "Islamic prayer",
-    "Musallah Scarborough",
+    "mosque Scarborough",
   ],
-  authors: [{ name: "Huda Musallah" }],
-  creator: "Huda Musallah",
-  publisher: "Huda Musallah",
-  applicationName: "Huda Musallah Namaz Timings",
+  authors: [{ name: "Masjid Huda" }],
+  creator: "Masjid Huda",
+  publisher: "Masjid Huda",
+  applicationName: "Masjid Huda Prayer Times",
   generator: "Next.js",
   referrer: "origin-when-cross-origin",
+  alternates: {
+    canonical: "/",
+  },
+  icons: {
+    icon: "/icon.png",
+    apple: "/icon.png",
+  },
   openGraph: {
-    title: "Huda Musallah - Scarborough Namaz Timings",
+    title: "Masjid Huda | Scarborough Prayer Times",
     description:
-      "Find prayer times and information for Huda Musallah, located on Prudential Drive in Scarborough, near Abu Bakr Masjid.",
-    url: "https://hudamusallah.com", // Replace with your actual domain
-    siteName: "Huda Musallah",
+      "Find prayer times and information for Masjid Huda in Scarborough, near Lawrence Avenue East and Midland Avenue.",
+    url: "https://www.masjidhuda.com/",
+    siteName: "Masjid Huda",
     locale: "en_CA",
     type: "website",
+    images: [
+      {
+        url: "/masjid-huda-logo.jpeg",
+        alt: "Masjid Huda logo",
+      },
+    ],
   },
   formatDetection: {
     email: false,
     address: true,
     telephone: true,
   },
-  metadataBase: new URL("https://hudamusallah.com"), // Replace with your actual domain
+  metadataBase: new URL("https://www.masjidhuda.com"),
 };
 
 export default function RootLayout({ children }) {
@@ -56,6 +72,28 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable}`}
         style={{ background: "#fff" }}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Mosque",
+              name: "Masjid Huda",
+              url: "https://www.masjidhuda.com/",
+              description:
+                "Masjid Huda prayer times and information in Scarborough, near Lawrence Avenue East and Midland Avenue.",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "411, 301 Prudential Drive",
+                postalCode: "M1P 4V3",
+                addressLocality: "Scarborough",
+                addressRegion: "ON",
+                addressCountry: "CA",
+              },
+              areaServed: "Scarborough",
+            }),
+          }}
+        />
         <Header />
         <main>{children}</main>
         <Footer />
